@@ -9,18 +9,18 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Luxury GTA Realtor in Brampton",
+  title: "Luxury Ontario Realtor in Brampton",
   description:
-    "Jeet Gill helps families buy and sell homes across Brampton, Mississauga, Caledon, Milton, and the Greater Toronto Area.",
+    "Jeet Gill helps families buy and sell homes across Ontario, including Brampton, Mississauga, Caledon, and Milton.",
   openGraph: {
-    title: "Jeet Gill | Luxury GTA Realtor",
+    title: "Jeet Gill | Luxury Ontario Realtor",
     description:
       "A premium personal real estate advisory experience across Brampton, Mississauga, Caledon, and Milton.",
   },
 };
 
 const stats = [
-  { value: "7+", label: "Years guiding GTA families" },
+  { value: "7+", label: "Years guiding Ontario families" },
   { value: "180+", label: "Buyer and seller conversations annually" },
   { value: "12", label: "Communities monitored weekly" },
 ];
@@ -39,7 +39,7 @@ const services = [
   {
     icon: TrendingUp,
     title: "Invest",
-    copy: "Rental fundamentals, resale potential, and location intelligence for long-term GTA growth.",
+    copy: "Rental fundamentals, resale potential, and location intelligence for long-term Ontario growth.",
   },
 ];
 
@@ -80,7 +80,7 @@ export default function HomePage() {
               Jeet Gill
             </h1>
             <p className="mt-6 max-w-2xl text-balance text-xl leading-8 text-white/80 sm:text-2xl">
-              Helping Families Buy & Sell Homes Across the Greater Toronto Area
+              Helping Families Buy & Sell Homes Across Ontario
             </p>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90">
@@ -104,7 +104,7 @@ export default function HomePage() {
                 <div className="relative aspect-[4/5] overflow-hidden rounded-md bg-white">
                   <Image
                     src="/images/jeet-gill.jpg"
-                    alt="Jeet Gill, GTA realtor with HomeLife Miracle Realty"
+                    alt="Jeet Gill, Ontario realtor with HomeLife Miracle Realty"
                     fill
                     priority
                     sizes="384px"
@@ -179,11 +179,11 @@ export default function HomePage() {
               Featured communities
             </p>
             <h2 id="communities-heading" className="mt-4 text-4xl font-medium tracking-tight md:text-5xl">
-              Local fluency across the west GTA.
+              Ontario reach with deep west-end market fluency.
             </h2>
             <p className="mt-5 text-lg leading-8 text-muted-foreground">
               Jeet tracks the school pockets, commute patterns, value shifts, and
-              buyer psychology that shape family moves west of Toronto.
+              buyer psychology that shape family moves across Ontario.
             </p>
           </Reveal>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -238,7 +238,7 @@ export default function HomePage() {
               </h2>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-primary-foreground/70">
                 Get a pricing conversation built around your exact property,
-                timing, upgrades, and comparable sales in your pocket of the GTA.
+                timing, upgrades, and comparable sales in your Ontario market.
               </p>
             </div>
             <div className="flex items-end">

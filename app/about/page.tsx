@@ -9,11 +9,11 @@ import { Card, CardContent } from "@/components/ui/card";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about Jeet Gill, a Brampton-based GTA realtor with HomeLife Miracle Realty serving Brampton, Mississauga, Caledon, and Milton.",
+    "Learn about Jeet Gill, a Brampton-based Ontario realtor with HomeLife Miracle Realty serving Brampton, Mississauga, Caledon, Milton, and beyond.",
   openGraph: {
     title: "About Jeet Gill",
     description:
-      "Professional real estate guidance for families across the Greater Toronto Area.",
+      "Professional real estate guidance for families across Ontario.",
   },
 };
 
@@ -28,7 +28,7 @@ export default function AboutPage() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-md bg-white">
               <Image
                 src="/images/jeet-gill.jpg"
-                alt="Jeet Gill, GTA realtor"
+                alt="Jeet Gill, Ontario realtor"
                 fill
                 priority
                 sizes="(min-width: 768px) 45vw, 100vw"
@@ -62,12 +62,12 @@ export default function AboutPage() {
             About Jeet
           </p>
           <h1 className="mt-4 text-5xl font-medium tracking-tight md:text-6xl">
-            A personal, polished approach to GTA real estate.
+            A personal, polished approach to Ontario real estate.
           </h1>
           <div className="mt-8 grid gap-5 text-lg leading-8 text-muted-foreground">
             <p>
               Jeet Gill works with HomeLife Miracle Realty in Brampton, helping
-              families make confident decisions across the Greater Toronto Area.
+              families make confident decisions across Ontario.
               His approach is measured, discreet, and deeply practical: understand
               the client first, then build the strategy around their timing,
               neighbourhood, and financial picture.
@@ -86,7 +86,7 @@ export default function AboutPage() {
                 <p className="mt-6 text-2xl font-medium">Experience</p>
                 <p className="mt-3 text-sm leading-6 text-muted-foreground">
                   Pricing strategy, buyer representation, listing preparation,
-                  negotiation, and GTA community analysis.
+                  negotiation, and Ontario market analysis.
                 </p>
               </CardContent>
             </Card>

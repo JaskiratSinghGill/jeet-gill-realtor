@@ -5,18 +5,18 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 export const baseMetadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Jeet Gill | GTA Realtor | HomeLife Miracle Realty",
+    default: "Jeet Gill | Ontario Realtor | HomeLife Miracle Realty",
     template: "%s | Jeet Gill",
   },
   description:
-    "Jeet Gill helps families buy, sell, and invest in homes across Brampton, Mississauga, Caledon, Milton, and the Greater Toronto Area.",
+    "Jeet Gill helps families buy, sell, and invest in homes across Ontario, including Brampton, Mississauga, Caledon, and Milton.",
   keywords: [
     "Jeet Gill realtor",
     "Brampton realtor",
     "Mississauga real estate",
     "Caledon homes",
     "Milton realtor",
-    "GTA real estate agent",
+    "Ontario real estate agent",
     "HomeLife Miracle Realty Brampton",
   ],
   openGraph: {
@@ -24,15 +24,15 @@ export const baseMetadata: Metadata = {
     locale: "en_CA",
     url: siteUrl,
     siteName: "Jeet Gill Real Estate",
-    title: "Jeet Gill | GTA Realtor",
+    title: "Jeet Gill | Ontario Realtor",
     description:
-      "Premium real estate guidance for families buying and selling across the Greater Toronto Area.",
+      "Premium real estate guidance for families buying and selling across Ontario.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jeet Gill | GTA Realtor",
+    title: "Jeet Gill | Ontario Realtor",
     description:
-      "Buy, sell, and invest with a polished real estate experience across Brampton, Mississauga, Caledon, and Milton.",
+      "Buy, sell, and invest with a polished real estate experience across Ontario.",
   },
   alternates: {
     canonical: siteUrl,
@@ -50,8 +50,8 @@ export const localBusinessJsonLd = {
     addressRegion: "ON",
     addressCountry: "CA",
   },
-  areaServed: ["Brampton", "Mississauga", "Caledon", "Milton", "Greater Toronto Area"],
+  areaServed: ["Ontario", "Brampton", "Mississauga", "Caledon", "Milton"],
   url: siteUrl,
   description:
-    "Jeet Gill is a GTA realtor helping families buy, sell, and invest across Brampton, Mississauga, Caledon, and Milton.",
+    "Jeet Gill is an Ontario realtor helping families buy, sell, and invest across Brampton, Mississauga, Caledon, Milton, and beyond.",
 };

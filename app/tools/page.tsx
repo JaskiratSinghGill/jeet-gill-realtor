@@ -9,11 +9,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 export const metadata: Metadata = {
   title: "Buyer Tools",
   description:
-    "Mortgage calculator, affordability calculator, and closing cost estimator for GTA buyers in Brampton, Mississauga, Caledon, and Milton.",
+    "Mortgage calculator, affordability calculator, and closing cost estimator for Ontario buyers in Brampton, Mississauga, Caledon, Milton, and beyond.",
   openGraph: {
-    title: "GTA Home Buyer Tools | Jeet Gill",
+    title: "Ontario Home Buyer Tools | Jeet Gill",
     description:
-      "Estimate mortgage payments, affordability, and closing costs before your next GTA real estate move.",
+      "Estimate mortgage payments, affordability, and closing costs before your next Ontario real estate move.",
   },
 };
 
@@ -41,7 +41,7 @@ export default function ToolsPage() {
             <CardHeader>
               <CardTitle>Mortgage calculator</CardTitle>
               <CardDescription>
-                Estimate the monthly payment for a GTA purchase.
+                Estimate the monthly payment for an Ontario purchase.
               </CardDescription>
             </CardHeader>
             <CardContent>

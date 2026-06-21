@@ -1,6 +1,6 @@
 # Jeet Gill Real Estate
 
-Luxury real estate website for Jeet Gill, a GTA realtor with HomeLife Miracle Realty in Brampton.
+Luxury real estate website for Jeet Gill, an Ontario realtor with HomeLife Miracle Realty in Brampton.
 
 ## Tech Stack
 

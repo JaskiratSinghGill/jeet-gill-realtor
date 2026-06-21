@@ -18,7 +18,7 @@ export function Footer() {
           <p className="text-2xl font-medium">Jeet Gill</p>
           <p className="mt-3 max-w-md text-sm leading-6 text-primary-foreground/70">
             A polished real estate advisory experience for families moving across
-            Brampton, Mississauga, Caledon, Milton, and the Greater Toronto Area.
+            Ontario, including Brampton, Mississauga, Caledon, and Milton.
           </p>
           <p className="mt-4 text-sm text-primary-foreground/60">
             HomeLife Miracle Realty, Brampton, Ontario
