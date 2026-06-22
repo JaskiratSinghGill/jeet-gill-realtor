@@ -9,11 +9,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Luxury Ontario Realtor in Brampton",
+  title: "Realtor Jeet Gill",
   description:
     "Jeet Gill helps families buy, sell, and lease homes across Ontario, including Brampton, Mississauga, Caledon, and Milton.",
   openGraph: {
-    title: "Jeet Gill | Luxury Ontario Realtor",
+    title: "Realtor Jeet Gill",
     description:
       "A premium personal real estate advisory experience across Brampton, Mississauga, Caledon, and Milton.",
   },

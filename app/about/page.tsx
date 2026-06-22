@@ -66,11 +66,12 @@ export default function AboutPage() {
           </h1>
           <div className="mt-8 grid gap-5 text-lg leading-8 text-muted-foreground">
             <p>
-              Jeet Gill works with HomeLife Miracle Realty in Brampton, helping
-              families make confident decisions across Ontario.
-              His approach is measured, discreet, and deeply practical: understand
-              the client first, then build the strategy around their timing,
-              neighbourhood, and financial picture.
+              Jeet Gill is a real estate broker with an ABR designation, working
+              with HomeLife Miracle Realty in Brampton and helping families make
+              confident decisions across Ontario. His approach is measured,
+              discreet, and deeply practical: understand the client first, then
+              build the strategy around their timing, neighbourhood, and financial
+              picture.
             </p>
             <p>
               From first-time buyers to move-up families and sellers preparing a

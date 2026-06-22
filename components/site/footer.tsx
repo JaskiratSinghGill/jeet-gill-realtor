@@ -37,7 +37,27 @@ export function Footer() {
           <div className="mt-4 grid gap-2 text-sm text-primary-foreground/70">
             <a href="mailto:jeet11gill@gmail.com">jeet11gill@gmail.com</a>
             <a href="tel:+16478931664">+1 (647) 893-1664</a>
-            <span>Brampton, ON</span>
+            <a
+              href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwjg0p_fypmVAxUAAAAAHQAAAAAQDA..i&pvq=CgwvZy8xaGhseTA2bHgiHQoXSG9tZUxpZmUgTWlyYWNsZSBSZWFsdHkQAhgD&lqi=CipIb21lTGlmZSBNaXJhY2xlIFJlYWx0eSAtIEJyYW1wdG9uLCBDYW5hZGEiA4gBAUjctMCuvo-AgAhaQRAAEAEQAhgAGAEYAhgDIidob21lbGlmZSBtaXJhY2xlIHJlYWx0eSBicmFtcHRvbiBjYW5hZGEqCAgCEAAQARACkgEScmVhbF9lc3RhdGVfYWdlbmN54AEA&fvr=1&cs=0&um=1&ie=UTF-8&fb=1&gl=us&sa=X&ftid=0x882b3d0a5285dc29:0xd36285823ecd7eda"
+              target="_blank"
+              rel="noreferrer"
+            >
+              470 Chrysler Dr #20, Brampton, ON L6S 0C1
+            </a>
+            <a
+              href="https://www.facebook.com/JeetGillCentury21"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Facebook
+            </a>
+            <a
+              href="https://www.instagram.com/jeet11gill/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Instagram
+            </a>
           </div>
         </div>
       </div>
