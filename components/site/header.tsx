@@ -14,8 +14,14 @@ export function Header() {
     <header className="fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-background/80 backdrop-blur-xl">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="group flex items-center gap-3" aria-label="Jeet Gill home">
-          <span className="grid h-9 w-9 place-items-center rounded-full bg-primary text-sm font-semibold text-primary-foreground">
-            JG
+          <span className="relative h-10 w-10 overflow-hidden rounded-full border border-border bg-white shadow-sm">
+            <Image
+              src="/images/jeet-gill.jpg"
+              alt="Jeet Gill"
+              fill
+              sizes="40px"
+              className="object-cover object-[center_18%]"
+            />
           </span>
           <span className="hidden text-sm font-medium tracking-wide sm:block">
             Jeet Gill
