@@ -18,8 +18,10 @@ export function AffordabilityCalculator() {
     const monthlyRate = rate / 100 / 12;
     const payments = 25 * 12;
     const mortgage =
-      adjustedPayment *
-      (((1 + monthlyRate) ** payments - 1) / (monthlyRate * (1 + monthlyRate) ** payments));
+      monthlyRate === 0
+        ? adjustedPayment * payments
+        : adjustedPayment *
+          (((1 + monthlyRate) ** payments - 1) / (monthlyRate * (1 + monthlyRate) ** payments));
 
     return {
       maxHousingPayment,
@@ -30,10 +32,10 @@ export function AffordabilityCalculator() {
   return (
     <div className="grid gap-6">
       <div className="grid gap-4 md:grid-cols-2">
-        <Field label="Gross annual household income" value={income} onChange={setIncome} />
-        <Field label="Monthly debt payments" value={debts} onChange={setDebts} />
-        <Field label="Available down payment" value={downPayment} onChange={setDownPayment} />
-        <Field label="Interest rate" value={rate} onChange={setRate} suffix="%" step="0.05" />
+        <Field label="Gross annual household income" value={income} onChange={setIncome} step="1000" min="0" />
+        <Field label="Monthly debt payments" value={debts} onChange={setDebts} step="50" min="0" />
+        <Field label="Available down payment" value={downPayment} onChange={setDownPayment} step="1000" min="0" />
+        <Field label="Interest rate" value={rate} onChange={setRate} suffix="%" step="0.05" min="0" />
       </div>
       <div className="rounded-lg border bg-card p-6">
         <p className="text-sm text-muted-foreground">Estimated buying power</p>
@@ -52,13 +54,15 @@ function Field({
   value,
   onChange,
   suffix,
-  step = "1000",
+  step = "1",
+  min,
 }: {
   label: string;
   value: number;
   onChange: (value: number) => void;
   suffix?: string;
   step?: string;
+  min?: string;
 }) {
   return (
     <div className="grid gap-2">
@@ -71,7 +75,11 @@ function Field({
           type="number"
           value={value}
           step={step}
-          onChange={(event) => onChange(Number(event.target.value))}
+          min={min}
+          onChange={(event) => {
+            const next = Number(event.target.value);
+            if (Number.isFinite(next)) onChange(next);
+          }}
           className={suffix ? "pr-12" : "pl-8"}
         />
         {suffix ? <span className="absolute right-4 top-3 text-muted-foreground">{suffix}</span> : null}

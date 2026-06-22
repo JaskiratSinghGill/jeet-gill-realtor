@@ -11,7 +11,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export const metadata: Metadata = {
   title: "Luxury Ontario Realtor in Brampton",
   description:
-    "Jeet Gill helps families buy and sell homes across Ontario, including Brampton, Mississauga, Caledon, and Milton.",
+    "Jeet Gill helps families buy, sell, and lease homes across Ontario, including Brampton, Mississauga, Caledon, and Milton.",
   openGraph: {
     title: "Jeet Gill | Luxury Ontario Realtor",
     description:
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
 
 const stats = [
   { value: "7+", label: "Years guiding Ontario families" },
-  { value: "180+", label: "Buyer and seller conversations annually" },
-  { value: "12", label: "Communities monitored weekly" },
+  { value: "10+", label: "Awards for exemplary service and achievement" },
+  { value: "20+", label: "Cities served across Ontario" },
 ];
 
 const services = [
@@ -41,9 +41,14 @@ const services = [
     title: "Invest",
     copy: "Rental fundamentals, resale potential, and location intelligence for long-term Ontario growth.",
   },
+  {
+    icon: Building2,
+    title: "Lease",
+    copy: "Tenant and landlord guidance for leasing decisions with clarity, speed, and careful documentation.",
+  },
 ];
 
-const communities = ["Brampton", "Mississauga", "Caledon", "Milton"];
+const communities = ["Brampton", "Mississauga", "Caledon", "Milton", "London", "Toronto"];
 
 const testimonials = [
   {
@@ -73,14 +78,11 @@ export default function HomePage() {
         <div className="absolute inset-0 luxury-grid opacity-20" />
         <div className="container relative grid min-h-[calc(100vh-4rem)] items-center gap-12 py-24 lg:grid-cols-[1fr_0.52fr]">
           <Reveal className="max-w-4xl">
-            <p className="mb-5 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm text-white/75 backdrop-blur">
-              HomeLife Miracle Realty - Brampton, Canada
-            </p>
             <h1 className="text-balance text-6xl font-medium tracking-tight sm:text-7xl lg:text-8xl">
               Jeet Gill
             </h1>
             <p className="mt-6 max-w-2xl text-balance text-xl leading-8 text-white/80 sm:text-2xl">
-              Helping Families Buy & Sell Homes Across Ontario
+              Helping Families Buy, Sell & Lease Homes Across Ontario
             </p>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90">
@@ -131,7 +133,7 @@ export default function HomePage() {
                 Trust, quietly earned
               </p>
               <h2 id="trust-heading" className="mt-4 text-4xl font-medium tracking-tight md:text-5xl">
-                Real estate guidance with polish, patience, and local depth.
+                Real estate guidance with patience, local depth, and a personal touch.
               </h2>
             </div>
             <div className="grid gap-4 sm:grid-cols-3">
@@ -155,10 +157,10 @@ export default function HomePage() {
               Services
             </p>
             <h2 id="services-heading" className="mt-4 text-4xl font-medium tracking-tight md:text-5xl">
-              Three paths. One elevated standard.
+              Four paths. One elevated standard.
             </h2>
           </Reveal>
-          <div className="mt-12 grid gap-5 md:grid-cols-3">
+          <div className="mt-12 grid gap-5 md:grid-cols-4">
             {services.map((service, index) => (
               <Reveal key={service.title} delay={index * 0.08}>
                 <article className="h-full rounded-lg border border-white/10 bg-white/[0.04] p-7">
@@ -179,7 +181,7 @@ export default function HomePage() {
               Featured communities
             </p>
             <h2 id="communities-heading" className="mt-4 text-4xl font-medium tracking-tight md:text-5xl">
-              Ontario reach with deep west-end market fluency.
+              Ontario reach with deep market fluency in multiple cities.
             </h2>
             <p className="mt-5 text-lg leading-8 text-muted-foreground">
               Jeet tracks the school pockets, commute patterns, value shifts, and

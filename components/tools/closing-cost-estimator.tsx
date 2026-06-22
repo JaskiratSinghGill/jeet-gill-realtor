@@ -18,10 +18,10 @@ export function ClosingCostEstimator() {
   return (
     <div className="grid gap-6">
       <div className="grid gap-4 md:grid-cols-2">
-        <Field label="Purchase price" value={price} onChange={setPrice} />
-        <Field label="Legal and title estimate" value={legal} onChange={setLegal} />
-        <Field label="Inspection estimate" value={inspection} onChange={setInspection} />
-        <Field label="Adjustments buffer" value={adjustments} onChange={setAdjustments} />
+        <Field label="Purchase price" value={price} onChange={setPrice} step="1000" />
+        <Field label="Legal and title estimate" value={legal} onChange={setLegal} step="100" />
+        <Field label="Inspection estimate" value={inspection} onChange={setInspection} step="50" />
+        <Field label="Adjustments buffer" value={adjustments} onChange={setAdjustments} step="100" />
       </div>
       <div className="rounded-lg bg-secondary p-6">
         <p className="text-sm text-muted-foreground">Estimated closing funds</p>
@@ -69,10 +69,12 @@ function Field({
   label,
   value,
   onChange,
+  step,
 }: {
   label: string;
   value: number;
   onChange: (value: number) => void;
+  step: string;
 }) {
   return (
     <div className="grid gap-2">
@@ -82,8 +84,12 @@ function Field({
         <Input
           type="number"
           value={value}
-          step="100"
-          onChange={(event) => onChange(Number(event.target.value))}
+          step={step}
+          min="0"
+          onChange={(event) => {
+            const next = Number(event.target.value);
+            if (Number.isFinite(next)) onChange(next);
+          }}
           className="pl-8"
         />
       </div>

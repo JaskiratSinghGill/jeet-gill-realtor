@@ -9,7 +9,7 @@ export const baseMetadata: Metadata = {
     template: "%s | Jeet Gill",
   },
   description:
-    "Jeet Gill helps families buy, sell, and invest in homes across Ontario, including Brampton, Mississauga, Caledon, and Milton.",
+    "Jeet Gill helps families buy, sell, lease, and invest in homes across Ontario, including Brampton, Mississauga, Caledon, and Milton.",
   keywords: [
     "Jeet Gill realtor",
     "Brampton realtor",
@@ -26,13 +26,13 @@ export const baseMetadata: Metadata = {
     siteName: "Jeet Gill Real Estate",
     title: "Jeet Gill | Ontario Realtor",
     description:
-      "Premium real estate guidance for families buying and selling across Ontario.",
+      "Premium real estate guidance for families buying, selling, and leasing across Ontario.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Jeet Gill | Ontario Realtor",
     description:
-      "Buy, sell, and invest with a polished real estate experience across Ontario.",
+      "Buy, sell, lease, and invest with a polished real estate experience across Ontario.",
   },
   alternates: {
     canonical: siteUrl,
@@ -53,5 +53,5 @@ export const localBusinessJsonLd = {
   areaServed: ["Ontario", "Brampton", "Mississauga", "Caledon", "Milton"],
   url: siteUrl,
   description:
-    "Jeet Gill is an Ontario realtor helping families buy, sell, and invest across Brampton, Mississauga, Caledon, Milton, and beyond.",
+    "Jeet Gill is an Ontario realtor helping families buy, sell, lease, and invest across Brampton, Mississauga, Caledon, Milton, and beyond.",
 };

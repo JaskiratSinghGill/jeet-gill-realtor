@@ -15,7 +15,7 @@ export function MortgageCalculator() {
   const result = useMemo(() => {
     const principal = Math.max(price - downPayment, 0);
     const monthlyRate = rate / 100 / 12;
-    const payments = years * 12;
+    const payments = Math.max(years, 1) * 12;
     const monthly =
       monthlyRate === 0
         ? principal / payments
@@ -28,10 +28,10 @@ export function MortgageCalculator() {
   return (
     <div className="grid gap-6">
       <div className="grid gap-4 md:grid-cols-2">
-        <Field label="Home price" value={price} onChange={setPrice} prefix="$" />
-        <Field label="Down payment" value={downPayment} onChange={setDownPayment} prefix="$" />
-        <Field label="Interest rate" value={rate} onChange={setRate} suffix="%" step="0.05" />
-        <Field label="Amortization" value={years} onChange={setYears} suffix="years" />
+        <Field label="Home price" value={price} onChange={setPrice} prefix="$" step="1000" min="0" />
+        <Field label="Down payment" value={downPayment} onChange={setDownPayment} prefix="$" step="1000" min="0" />
+        <Field label="Interest rate" value={rate} onChange={setRate} suffix="%" step="0.05" min="0" />
+        <Field label="Amortization" value={years} onChange={setYears} suffix="years" step="1" min="1" />
       </div>
       <div className="rounded-lg bg-primary p-6 text-primary-foreground">
         <p className="text-sm text-primary-foreground/70">Estimated monthly payment</p>
@@ -51,7 +51,8 @@ function Field({
   onChange,
   prefix,
   suffix,
-  step = "1000",
+  step = "1",
+  min,
 }: {
   label: string;
   value: number;
@@ -59,6 +60,7 @@ function Field({
   prefix?: string;
   suffix?: string;
   step?: string;
+  min?: string;
 }) {
   return (
     <div className="grid gap-2">
@@ -69,7 +71,11 @@ function Field({
           type="number"
           value={value}
           step={step}
-          onChange={(event) => onChange(Number(event.target.value))}
+          min={min}
+          onChange={(event) => {
+            const next = Number(event.target.value);
+            if (Number.isFinite(next)) onChange(next);
+          }}
           className={prefix ? "pl-8" : suffix ? "pr-16" : ""}
         />
         {suffix ? <span className="absolute right-4 top-3 text-muted-foreground">{suffix}</span> : null}
