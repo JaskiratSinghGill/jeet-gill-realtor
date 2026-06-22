@@ -17,8 +17,6 @@ export const metadata: Metadata = {
   },
 };
 
-const areas = ["Brampton", "Mississauga", "Caledon", "Milton", "Etobicoke", "Vaughan"];
-
 export default function AboutPage() {
   return (
     <main className="pt-16">
@@ -103,23 +101,6 @@ export default function AboutPage() {
             </Card>
           </div>
         </Reveal>
-      </section>
-
-      <section className="bg-secondary py-20 md:py-24" aria-labelledby="areas-heading">
-        <div className="container">
-          <Reveal>
-            <h2 id="areas-heading" className="text-4xl font-medium tracking-tight md:text-5xl">
-              Areas served
-            </h2>
-            <div className="mt-10 grid gap-3 sm:grid-cols-2 md:grid-cols-3">
-              {areas.map((area) => (
-                <div key={area} className="rounded-lg bg-background px-5 py-4 text-lg font-medium">
-                  {area}
-                </div>
-              ))}
-            </div>
-          </Reveal>
-        </div>
       </section>
 
       <section className="container py-20 md:py-28" aria-labelledby="contact-heading">
